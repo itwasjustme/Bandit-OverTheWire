@@ -1,0 +1,37 @@
+Goal : log into the game using SSH
+----------------------------------
+SSH = Secure Shell
+Provides Secure remote access, encrypted data communications and strong authentication
+
+----------------------------------
+
+Host: bandit.labs.overthewire.org
+port: 2220
+
+This challenge is to simply log into Bandit's machine using SSH
+For that we will be needing the ssh command
+
+------------------------------------------------------------------
+The username and password for bandit0 level are given:
+username : bandit0
+password : bandit0
+
+To login:
+
+$ sudo ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+NOTE: they recommend using port 2220 so we pass the argument -p to direct to that port
+
+After that, we enter the given username and password and login into their game/system
+
+For this challenge, ls and cat command is very useful
+
+$ ls
+NOTE : lists all the files in that current directory
+$ cat <filename>
+NOTE : displays the content inside that file
+
+The password for the next level : Level 1 is stored in a file (no spoilers) in the system.
+
+
+
